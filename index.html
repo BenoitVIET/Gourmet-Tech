@@ -1,40 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>accueil</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <section class="title">
-                    <div>G</div>
-                    <h1>GourmetTech</h1>
-                </section>
-                <ul>
-                    <li href="#">Accueil</li>
-                    <li href="#">Ajouter une recette</li>
-                    <li href="#">Mes favoris</li>
-                    <li href="#">A propos</li>
-                </ul>
-                <button>
-                    <img src="" alt="change light mode"/>
-                </button>
-            </nav>
-        </header>
-        
-        <footer>
-        <h2>Navigation</h2>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Ajouter une recette</a></li>
-                <li><a href="#">Mes favoris</a></li>
-                <li><a href="#">À propos</a></li>
-            </ul>
-        <h2>À propos de GourmetTech</h2>
-            <p>GourmetTech est une plateforme de recettes culinaires interactives, dans le cadre d'un projet pédagogique.</p>
-        <p>&copy; 2025 GourmetTech - Tous droits réservés</p>
-    </footer>
-    </body>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>accueil</title>
+</head>
+
+<body>
+    <main>
+        <section class="recepie">
+            <form>
+                <input type="text" placeholder="Rechercher une recette...">
+                <button> Rechercher </button>
+            </form>
+            <div class="filters">
+                <div class=" filterMain" >
+                    <h2>Catégorie</h2>
+                    <ul>
+                        <li>
+                            <input type="radio" id="entry" name = "category">
+                            <label for="entry"> Entrée </label>
+                        </li>
+                        <li><input type="radio" id="main" name = "category">
+                            <label for="main"> Plat </label>
+                        </li>
+                        <li><input type="radio" id="desert" name = "category">
+                            <label for="desert"> Dessert </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" filterMain" >
+                    <h2>Temps de préparation</h2>
+                    <ul>
+                        <li>
+                            <input type="radio" id="fast" name = "preparationTime">
+                            <label for="fast"> Rapide (- 30 min) </label>
+                        </li>
+                        <li><input type="radio" id="medium" name = "preparationTime">
+                            <label for="medium"> Moyen ( 30-60 min) </label>
+                        </li>
+                        <li><input type="radio" id="Long" name = "preparationTime">
+                            <label for="Long"> Long (+ 60 min) </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" filterMain">
+                    <h2>Difficulté</h2>
+                    <ul>
+                        <li>
+                            <input type="radio" id="easy" name = "Difficulty">
+                            <label for="easy"> Facile </label>
+                        </li>
+                        <li><input type="radio" id="moderate" name = "Difficulty">
+                            <label for="moderate"> Moyen </label>
+                        </li>
+                        <li><input type="radio" id="hard" name = "Difficulty">
+                            <label for="hard"> Difficile </label>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+        </section>
+    </main>
+
 </html>
