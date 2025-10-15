@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Accueil</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <header>
-            <nav>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+           <nav>
                 <section class="title">
                     <div>G</div>
                     <h1>GourmetTech</h1>
@@ -24,7 +25,62 @@
                 </button>
             </nav>
         </header>
-        
+        <main>
+          <section class="recepie">
+            <form>
+                <input type="text" placeholder="Rechercher une recette...">
+                <button> Rechercher </button>
+            </form>
+            <div class="filters">
+                <div class=" filterMain" >
+                    <h2>Catégorie</h2>
+                    <ul>
+                        <li>
+                            <input type="radio" id="entry" name = "category" data-category="entry">
+                            <label for="entry"> Entrée </label>
+                        </li>
+                        <li><input type="radio" id="main" name = "category" data-category="main">
+                            <label for="main"> Plat </label>
+                        </li>
+                        <li><input type="radio" id="desert" name = "category" data-category="desert">
+                            <label for="desert"> Dessert </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" filterMain" >
+                    <h2>Temps de préparation</h2>
+                    <ul>
+                        <li>
+                            <input type="radio" id="fast" name = "preparationTime" data-preparationTime="fast">
+                            <label for="fast"> Rapide (- 30 min) </label>
+                        </li>
+                        <li><input type="radio" id="medium" name = "preparationTime" data-preparationTime="medium">
+                            <label for="medium"> Moyen (30-60 min) </label>
+                        </li>
+                        <li><input type="radio" id="Long" name = "preparationTime" data-preparationTime="long">
+                            <label for="Long"> Long (+ 60 min) </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" filterMain">
+                    <h2>Difficulté</h2>
+                    <ul>
+                        <li>
+                            <input type="radio" id="easy" name = "Difficulty" data-difficulty="easy">
+                            <label for="easy"> Facile </label>
+                        </li>
+                        <li><input type="radio" id="moderate" name = "Difficulty" data-difficulty="moderate">
+                            <label for="moderate"> Moyen </label>
+                        </li>
+                        <li><input type="radio" id="hard" name = "Difficulty" data-difficulty="hard">
+                            <label for="hard"> Difficile </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </section>
+        </main>
+          
         <footer id="footer" class="site-footer">
             <div class="navigation">
                 <h2 id="nav-title" class="footer-title">Navigation</h2>
