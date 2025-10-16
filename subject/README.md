@@ -122,7 +122,7 @@ Fonctionnalités JavaScript :
 Exigences techniques spécifiques
 
 HTML
-● Utilisation des balises sémantiques appropriées (header, nav, main, section,
+● Utilisation des balises sémantiques appropriées (h eader, nav, main, section,
 article, footer, etc.)
 ● Structure correcte des formulaires avec labels associés aux inputs
 ● Utilisation d'attributs data-* pour stocker des informations supplémentaires
