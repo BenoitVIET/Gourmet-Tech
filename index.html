@@ -3,7 +3,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accueil</title>
     <link rel="stylesheet" href="style.css" />
-    <title>accueil</title>
+    <title>Accueil</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -26,8 +27,6 @@
         </header>
         <main>
           <section class="recepie">
-    <main>
-        <section class="recepie">
             <form>
                 <input type="text" placeholder="Rechercher une recette...">
                 <button> Rechercher </button>
@@ -63,29 +62,63 @@
                         </li>
                     </ul>
                 </div>
-                <div class=" filterMain">
+                              <div class=" filterMain" >
                     <h2>Difficulté</h2>
                     <ul>
                         <li>
-                            <input type="radio" id="easy" name = "Difficulty" data-difficulty="easy">
-                            <label for="easy"> Facile </label>
+                            <input type="radio" id="fast" name = "preparationTime" data-preparationTime="fast">
+                            <label for="fast">Facile</label>
                         </li>
-                        <li><input type="radio" id="moderate" name = "Difficulty" data-difficulty="moderate">
-                            <label for="moderate"> Moyen </label>
+                        <li><input type="radio" id="medium" name = "preparationTime" data-preparationTime="medium">
+                            <label for="medium">Moyen</label>
                         </li>
-                        <li><input type="radio" id="hard" name = "Difficulty" data-difficulty="hard">
-                            <label for="hard"> Difficile </label>
+                        <li><input type="radio" id="Long" name = "preparationTime" data-preparationTime="long">
+                            <label for="Long">Difficile</label>
                         </li>
                     </ul>
                 </div>
-
+            </div>
+           <section class="recepies">
+            <div class="eachCard">
+                <img src="assets/pictures/apple tart.jpg" alt="apple tart" width="250px">
+                <div class=" recepiePresentation">
+                    <h3>Tarte aux pommes</h3>
+                    <div class="infoRecepie">
+                        <p>dessert</p>
+                        <p>60 min</p>
+                        <p>Facile</p>
+                    </div>
+                    <button class="recetteButton">Voir la recette</button>
+                </div>
+            </div>
+            <div class="eachCard">
+                <img src="assets/pictures/paella.jpg" alt="Paëlla" width="250px">
+                <div class=" recepiePresentation">
+                    <h3>Paëlla</h3>
+                    <div class="infoRecepie">
+                        <p>Plat</p>
+                        <p>45 min</p>
+                        <p>Moyen</p>
+                    </div>
+                    <button class="recetteButton">Voir la recette</button>
+            <div class="eachCard">
+                <img src="assets/pictures/velouté.jpg" alt="Velouté de potiron" width="250px">
+                <div class=" recepiePresentation">
+                    <h3>Velouté de potiron</h3>
+                    <div class="infoRecepie">
+                        <p>Entrée</p>
+                        <p>30 min</p>
+                        <p>Facile</p>
+                    </div>
+                    <button class="recetteButton">Voir la recette</button>
+                </div>
             </div>
           </section>
         </main>
           
         <footer id="footer" class="site-footer">
             <div class="navigation">
-                <h2 id="nav-title" class="footer-title">Navigation</h2>
+                <h4 id="nav-title" class="footer-title">Navigation</h4>
                 <ul class="footer-nav-list">
                     <li class="footer-nav-item"><a href="index.html" class="footer-nav-link">Accueil</a></li>
                     <li class="footer-nav-item"><a href="others/recettes.html" class="footer-nav-link">Ajouter une recette</a></li>
@@ -94,7 +127,7 @@
                 </ul>
             </div>
             <div class="about">
-                <h2 id="about-title" class="footer-title">À propos de GourmetTech</h2>
+                <h4 id="about-title" class="footer-title">À propos de GourmetTech</h4>
                 <p class="footer-description">GourmetTech est une plateforme de recettes culinaires interactives, dans le cadre d'un projet pédagogique.</p>
             </div>
             <div class="copyright">
