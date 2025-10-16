@@ -7,103 +7,98 @@
     text-decoration: none;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    transition: 1s;
 }
 :root {
     --color1: #faf6f0;
     --color2: #000000;
     --color3: #e67f21;
     --color4: #f9f9f9;
-    --color5: #3197de;
-    --color6: #2fce72;
   }
 
-/* main filter  */
-
-
-.recepie{
+/* header  */
+header {
     width: 98%;
     margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
     margin-bottom: 10px;
     box-shadow: 0px 0px 9px 1px #938989; 
-      
-}
-
-.filters{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-form{
-    width: 95%;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center
-}
-
-#recepieSearch{
-width: 80%;
-padding: 5px;
-border: 1px solid #cdc6c6; 
-color: #cdc6c6;
-}
-form button{
-width: 19%;
-background-color: var(--color3);
-border:none;
-color: var(--color1);
-font-size: 0.7em;
-}
-
-form button:hover{
-transition: 0.6s;
-background-color: color-mix(in srgb, var(--color3) 20%, white );
-color: var(--color3);
-cursor: pointer;
-}
-
-
-/* filers  */
-
-.filterMain{
-    background-color: var(--color4);
-    margin: 5px;
-    padding: 10px;
-    min-width: 15vw;
-}
-
-.filterMain h2{
-    font-size: 0.8em;
-    margin-bottom: 5px;
-    font-weight: 600;
-}
-.filterMain ul li label{
-    font-size: 0.7em;
-}
-.filterMain ul li input{
-    width: 10px;
-    margin: 3px;
     
 }
 
-.filterMain .entryFilter li input{
-    accent-color: var(--color3);
-    border: none;
-}
-.filterMain .prepTimeFilter li input{
-    accent-color: var(--color6);
-}
-.filterMain .difficultyFilter li input{
-    accent-color: var(--color5);
-}
-.filterMain ul li input:hover{
-   cursor: pointer;
-}
+/* nav bar */
 
-.filterMain ul li{
+.title {
     display: flex;
     align-items: center;
+}
+
+.title div {
+    background-color: var(--color3);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    border-radius: 20px;
+    color: var(--color1);
+    font-size: 0.8em;
+    
+}
+
+.title h1 {
+    color: var(--color3);
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+.menuList {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    }
+
+.menuList li{
+   font-size: 0.8em;
+}
+
+.menuList li:hover{
+   font-size: 1em;
+   
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    
+
+    
+}
+
+nav button {
+    width: 20px;
+    height: 20px;
+    
+}
+
+a{
+    color: var(--color2);
+
+}
+
+#moon{
+    width: 35px;
+    height: 35px;
+    background-color:var(--color4);
+    border-radius: 50px;
+    padding: 8px;
+}
+
+#moon:hover{
+background-color:color-mix(in srgb,var(--color4)90%, black);
+transition: 0.5s;
 }
